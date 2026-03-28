@@ -1,0 +1,358 @@
+body {
+    background-color: rgb(255, 255, 255);
+    margin: 0;
+}
+
+.tamanho {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.box {
+    width: 250px;
+    height: 250px;
+    background-color: gray;
+    float: right;
+    margin-right: 50px;
+    margin-top: 50px;
+    border-left: 30px;
+    border-top: 30px;
+    border-bottom: 0px;
+    border-right: 0px;
+    border-style: solid;
+    border-color: rgb(226, 225, 225);
+}
+
+.avaliaçao {
+    margin-left: 20px;
+}
+
+.filtro {
+    width: 200px;
+    height: 70px;
+    background-color: red;
+    float: right;
+    margin-right: 10px;
+    margin-bottom: 30px;
+    margin-top: 20px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box :hover {
+    width: 500px;
+    height: 500px;
+}
+
+h2 {
+    font-size: 15px;
+    color: aliceblue;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+   font-size: 15px;
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+a:hover{
+    text-decoration: underline;
+    color: black;
+   font-size: 15px;
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+a:hover .restaurante-card {
+    background-color: #e0dee5;
+    color: #311b1b;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }  
+h1 {
+    font-size: 20px;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+h4 {
+    font-size: 20px;
+    margin-left: 90px;
+    margin-right:90px;
+    margin-top: 20px;
+    color: rgb(0, 0, 0);
+}
+
+#foodbox :hover {
+    width: 300px;
+    height: 300px;
+}
+
+#barrafake1 {
+    width: 100%;
+    height: 90px;
+    background-color: red;
+    position: absolute;
+}
+
+#barrafake2 {
+    width: 100%;
+    height: 100px;
+    background-color: bisque;
+    position: absolute;
+    margin-top: 90px;
+}
+
+#barrafake3 {
+    width: 100%;
+    height: 70px;
+    background-color: red;
+    position: absolute;
+    z-index: 0;
+    margin-top: 840px;
+}
+
+#opcaofake {
+    width: 100%;
+    height: 40px;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 3px;
+    border-color: rgb(226, 225, 225);
+    border-style: solid;
+    position: absolute;
+    margin-top: 910px;
+}
+
+#boxfake {
+    width: 100%;
+    height: 400px;
+    margin-top: 970px;
+    border-bottom: 20px;
+    border-top: 0px;
+    border-left: 0;
+    border-right: 0;
+    border-style: solid;
+    border-color: rgb(226, 225, 225);
+    position: absolute;
+}
+
+#filfake {
+    width: 100%;
+    height: 50px;
+    border-top: 0;
+    border-left: 3px;
+    border-right: 0;
+    border-bottom: 3px;
+    border-color: rgb(226, 225, 225);
+    border-style: solid;
+    position: absolute;
+    margin-top: 1370px;
+}
+
+#conteiner {
+    width: 1300px;
+    height: 2000px;
+    background-color: white;
+    margin: auto;
+}
+
+#topo {
+    width: 100%;
+    height: 90px;
+    background-color: red;
+}
+
+#logo {
+    width: 190px;
+    height: 90px;
+    margin-top: 100px;
+    float: left;
+    position: relative;
+    z-index: 2;
+}
+
+#butaofil {
+    width: 200px;
+    height: 55px;
+    float: left;
+    position: relative;
+    z-index: 2;
+    margin-left: 10px;
+    margin-top: 20px;
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#sarchbar {
+    width: 300px;
+    height: 30px;
+    background-color: white;
+    float: left;
+    position: relative;
+    z-index: 2;
+    margin-left: 60px;
+    margin-top: 25px;
+    border-radius: 50px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+#restalprox {
+    width: 250px;
+    height: 30px;
+    margin-top: 30px;
+    margin-right: 50px;
+    float: right;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#banner {
+    width: 1300px;
+    height: 700px;
+    background-color: antiquewhite;
+    margin: auto;
+}
+
+#barra {
+    width: 100%;
+    height: 120px;
+    background-color: red;
+}
+
+#opcoes {
+    width: 100%;
+    height: 40px;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 3px;
+    border-color: rgb(226, 225, 225);
+    border-style: solid;
+    display: flex;
+    align-items: center;
+}
+
+#foodbox {
+    width: 100%;
+    height: 400px;
+    margin-top: 20px;
+    border-bottom: 20px;
+    border-top: 0px;
+    border-left: 0;
+    border-right: 0;
+    border-style: solid;
+    border-color: rgb(226, 225, 225);
+}
+
+#melhor {
+    width: 860px;
+    height: 50px;
+    float: left;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 3px;
+    border-color: rgb(226, 225, 225);
+    border-style: solid;
+    display: flex;
+    align-items: center;
+}
+
+#top {
+    width: 850px;
+    height: 300px;
+    background-color: red;
+    margin: auto;
+    margin-top: 60px;
+    margin-left: 1px;
+    border-radius: 100px;
+    float: left;
+}
+
+#foto {
+    width: 300px;
+    height: 300px;
+    background-color: black;
+    float: left;
+}
+
+#toptext {
+    width: 550px;
+    height: 300px;
+    color: azure;
+    float: left;
+    border-top-right-radius: 100px;
+    border-bottom-right-radius: 100px;
+}
+
+#filtrar {
+    width: 440px;
+    height: 50px;
+    float: right;
+    border-top: 0;
+    border-left: 3px;
+    border-right: 0;
+    border-bottom: 3px;
+    border-color: rgb(226, 225, 225);
+    border-style: solid;
+    display: flex;
+    align-items: center;
+}
+
+#abafiltro {
+    width: 440px;
+    height: 400px;
+    margin-top: 0px;
+    float: right;
+    border-top: 0;
+    border-left: 3px;
+    border-right: 0;
+    border-bottom: 0;
+    border-color: rgb(226, 225, 225);
+    border-style: solid;
+}
+
+#rodape {
+    width: 100%;
+    height: 600px;
+    background-color: rgba(216, 69, 69);
+}
+
+#eventos {
+    margin: 20px;
+  }
+  
+  #eventoSelect {
+    display: flex;
+    border: 1px solid #ddd;
+    width: max-content;
+    cursor: pointer;
+  }
+  
+  .opcao {
+    padding: 8px;
+    border-right: 1px solid #ddd;
+  }
+  
+  .opcao:hover {
+    background-color: #f0f0f0;
+  }
+  
+  #Eventos {
+    margin-top: 20px;
+  }
+  
+  .restaurante-card {
+    border: 2px solid #ddd;
+    padding: 10px;
+    margin: 10px 0;
+  }
+
+  .mapa-centralizado {
+    width: 100%;
+    margin-top: 20px;}
