@@ -8,7 +8,16 @@
       <nav>
         <a href="<?= $BASE_URL ?>eventos.php" class="text-white me-4">Eventos</a>
         <a href="<?= $BASE_URL ?>restau prox.php" class="text-white me-4">Restaurantes Próximos</a>
-        <a href="<?= $BASE_URL ?>create.php" class="text-white">Cadastre-se</a>
+
+        <?php if(isset($_SESSION["usuario_id"])): ?>
+          <a href="<?= $BASE_URL ?>perfil.php" class="text-white me-4">
+            👤 <?= $_SESSION["usuario_email"] ?>
+          </a>
+          <a href="<?= $BASE_URL ?>config/process.php?type=logout" class="text-white">Sair</a>
+        <?php else: ?>
+          <a href="<?= $BASE_URL ?>login.php" class="text-white me-4">Entrar</a>
+          <a href="<?= $BASE_URL ?>create.php" class="text-white">Cadastre-se</a>
+        <?php endif; ?>
       </nav>
     </div>
   </header>

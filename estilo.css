@@ -27,7 +27,6 @@ h6 {
     color: aliceblue;
 }
 
-/* <h7> não existe, usar span ou class */
 h7 {
     margin-left: 50px;
     font-size: 20px;
@@ -36,6 +35,49 @@ h7 {
 
 .avaliaçao {
     margin-left: 20px;
+}
+
+/* ------------------- LINKS ------------------- */
+/* Aplica vermelho apenas nos links de navegação e botões — não afeta Bootstrap */
+header a,
+nav a {
+    text-decoration: none;
+    color: white;
+}
+
+.btn a,
+.filtro a {
+    text-decoration: none;
+    color: red;
+}
+
+header a:hover,
+nav a:hover,
+.btn a:hover,
+.filtro a:hover {
+    text-decoration: underline;
+    color:#badbcc
+}
+
+/* ------------------- ALERTAS BOOTSTRAP ------------------- */
+.alert-success {
+    color: #0f5132 !important;
+    background-color: #d1e7dd !important;
+    border-color: #badbcc !important;
+}
+
+.alert-success * {
+    color: #0f5132 !important;
+}
+
+.alert-danger {
+    color: #842029 !important;
+    background-color: #f8d7da !important;
+    border-color: #f5c2c7 !important;
+}
+
+.alert-danger * {
+    color: #842029 !important;
 }
 
 /* ------------------- BOXES DE COMIDA ------------------- */
@@ -71,12 +113,6 @@ h7 {
     align-items: center;
 }
 
-a {
-    text-decoration: none;
-    color: red;
-}
-
-
 #filtrar {
     width: 440px;
     height: 50px;
@@ -95,7 +131,7 @@ a {
     border-left: 3px solid rgb(226, 225, 225);
 }
 
-/* ------------------- FAKE DIVS (REMOVER SE NÃO USADAS) ------------------- */
+/* ------------------- FAKE DIVS ------------------- */
 #barrafake1, #barrafake3 {
     width: 100%;
     height: 90px;
@@ -142,7 +178,7 @@ a {
     margin-top: 1370px;
 }
 
-/* ------------------- HEADER ------------------- */
+/* ------------------- LAYOUT GERAL ------------------- */
 #conteiner {
     width: 1300px;
     height: 2000px;
@@ -208,8 +244,7 @@ a {
 
 /* ------------------- BANNER ------------------- */
 #banner {
-    width: 1300px;
-    height: 700px;
+    width: 100%;
     background-color: antiquewhite;
     margin: auto;
 }
@@ -278,14 +313,33 @@ a {
     background-color: rgb(216, 69, 69);
 }
 
+/* ------------------- CARROSSEL ------------------- */
 #carouselExample {
     width: 100%;
-    margin-top: 90px;
 }
 
 #carouselExample .carousel-item img {
     width: 100%;
-    height: 720px;        /* altura fixa — ajuste conforme preferir */
-    object-fit: cover;    /* recorta a imagem para preencher sem distorcer */
-    object-position: center; /* centraliza o recorte */
+    height: 800px;
+    object-fit: cover;
+    object-position: center;
+}
+
+/* ------------------- RESTAURANTE CARD ------------------- */
+.restaurante-card {
+    border: 2px solid #ddd;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+a:hover .restaurante-card {
+    background-color: #e0dee5;
+    color: #311b1b;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* ------------------- MAPA ------------------- */
+.mapa-centralizado {
+    width: 100%;
+    margin-top: 20px;
 }
