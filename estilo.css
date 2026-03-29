@@ -315,14 +315,19 @@ nav a:hover,
 
 /* ------------------- CARROSSEL ------------------- */
 #carouselExample {
-    width: 100%;
+    width: 80%;
+    margin: 20px auto 0 auto;
+    display: block;
+
+    
 }
 
 #carouselExample .carousel-item img {
     width: 100%;
-    height: 800px;
+    height: 600px;
     object-fit: cover;
     object-position: center;
+
 }
 
 /* ------------------- RESTAURANTE CARD ------------------- */
