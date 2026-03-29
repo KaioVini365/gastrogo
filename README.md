@@ -111,7 +111,7 @@ C:\wamp64\www\Gastrogo\
   $host   = "localhost";
   $dbname = "gastrogo";
   $user   = "root";
-  $pass   = ""; // WampServer não tem senha por padrão
+  $pass   = ""; 
 
   try {
     $conn = new PDO("mysql:host=$host;dbname=$dbname", $user, $pass);
