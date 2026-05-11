@@ -97,7 +97,7 @@ CREATE TABLE usuarios (
 
 1. Clone o repositório:
 ```bash
-git clone https://github.com/seu-usuario/gastrogo.git
+git clone https://github.com/KaioVini365/gastrogo.git
 ```
 
 2. Copie a pasta para:
