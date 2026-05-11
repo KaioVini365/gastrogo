@@ -4,21 +4,21 @@
 
 ---
 
-## 📖 Sobre o Projeto
+## Sobre o Projeto
 
 O GastroGo nasceu para resolver um problema simples: **você está em uma região desconhecida e não sabe onde comer bem.** A plataforma sugere restaurantes próximos filtrados por tipo de ocasião — seja um aniversário, um jantar romântico, uma reunião de negócios ou um show ao vivo.
 
 ---
 
-## ✨ Funcionalidades
+## Funcionalidades
 
-- 🎠 **Carrossel de banners** com destaques e promoções de restaurantes parceiros
-- 🍣 **Opções Rápidas** por categoria de culinária — japonesa, churrasco, hambúrguer e vegetariana
-- 🏆 **Restaurante do Mês** — destaque para o estabelecimento mais bem avaliado pelos usuários
-- 🎉 **Filtro por ocasião** — encontre restaurantes ideais para aniversários, encontros românticos, negócios, despedidas, shows ao vivo e karaokê
-- 📅 **Página de Eventos** — lista restaurantes com eventos especiais, filtráveis por categoria em tempo real via JavaScript
-- 📍 **Restaurantes Próximos** — mapa integrado via Google Maps para localizar opções na sua região
-- 👤 **Sistema completo de usuários (CRUD):**
+- **Carrossel de banners** com destaques e promoções de restaurantes parceiros
+- **Opções Rápidas** por categoria de culinária — japonesa, churrasco, hambúrguer e vegetariana
+- **Restaurante do Mês** — destaque para o estabelecimento mais bem avaliado pelos usuários
+- **Filtro por ocasião** — encontre restaurantes ideais para aniversários, encontros românticos, negócios, despedidas, shows ao vivo e karaokê
+- **Página de Eventos** — lista restaurantes com eventos especiais, filtráveis por categoria em tempo real via JavaScript
+- **Restaurantes Próximos** — mapa integrado via Google Maps para localizar opções na sua região
+- **Sistema completo de usuários (CRUD):**
   - **Cadastro** — criação de conta com e-mail único e senha criptografada
   - **Login / Logout** — autenticação segura com sessões PHP
   - **Perfil** — edição de e-mail e senha
@@ -26,7 +26,7 @@ O GastroGo nasceu para resolver um problema simples: **você está em uma regiã
 
 ---
 
-## 🔐 Segurança
+## Segurança
 
 - Senhas armazenadas com `password_hash()` — nunca em texto puro
 - Autenticação via `password_verify()`
@@ -36,7 +36,7 @@ O GastroGo nasceu para resolver um problema simples: **você está em uma regiã
 
 ---
 
-## 🛠️ Tecnologias Utilizadas
+## Tecnologias Utilizadas
 
 | Tecnologia | Uso |
 |---|---|
@@ -74,7 +74,7 @@ GastroGo/
 
 ---
 
-## 🗄️ Banco de Dados
+## Banco de Dados
 
 ```sql
 CREATE DATABASE gastrogo;
@@ -91,7 +91,7 @@ CREATE TABLE usuarios (
 
 ---
 
-## 🚀 Como Rodar Localmente
+## Como Rodar Localmente
 
 **Pré-requisitos:** WampServer 3.4+ instalado e rodando.
 
@@ -130,7 +130,7 @@ http://localhost/Gastrogo/
 
 ---
 
-## 👨‍💻 Desenvolvido por
+## Desenvolvido por
 
 **Kaio Vinicius Soares Luiz** — Estudante de Sistemas de Informação | UVA  
 Projeto acadêmico desenvolvido para a disciplina de Desenvolvimento Web.
