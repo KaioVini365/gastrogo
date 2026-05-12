@@ -50,7 +50,7 @@ O GastroGo nasceu para resolver um problema simples: **você está em uma regiã
 
 ---
 
-## 📁 Estrutura de Pastas
+## Estrutura de Pastas
 
 ```
 GastroGo/
