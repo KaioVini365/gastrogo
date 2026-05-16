@@ -70,7 +70,7 @@
   </div>
 
   <footer class="bg-danger text-white text-center py-4 mt-5">
-    <p>&copy; 2025 GastroGo – Todos os direitos reservados.</p>
+    <p> &copy, 2025 GastroGo – Todos os direitos reservados.</p>
   </footer>
 
 </body>

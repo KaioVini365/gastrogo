@@ -61,8 +61,8 @@ INSERT INTO eventos (restaurante_id, tipo, nome_evento, descricao, data_inicio, 
 
 -- Senha: teste123 (hash gerado com password_hash)
 INSERT INTO usuarios (email, senha, nome) VALUES
-('teste@gastrogo.com', '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi', 'Usuário Teste'),
-('kaio@gastrogo.com', '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi', 'Kaio Vinicius');
+('teste@gastrogo.com', 'abc123,,k1', 'Usuário Teste'),
+('kaio@gastrogo.com', 'abc123,,k2', 'Kaio Vinicius');
 
 
 INSERT INTO avaliacoes (usuario_id, restaurante_id, nota, comentario, data_visita) VALUES
@@ -78,4 +78,5 @@ INSERT INTO favoritos (usuario_id, restaurante_id) VALUES
 (1, 10),
 (2, 2),
 (2, 9);
+
 

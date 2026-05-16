@@ -1,4 +1,4 @@
-/* ------------------- RESET & GERAL ------------------- */
+
 body {
     background-color: #fff;
     margin: 0;
@@ -38,7 +38,7 @@ h7 {
 }
 
 /* ------------------- LINKS ------------------- */
-/* Aplica vermelho apenas nos links de navegação e botões — não afeta Bootstrap */
+
 header a,
 nav a {
     text-decoration: none;
