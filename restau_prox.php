@@ -25,7 +25,7 @@
       <nav>
         <a href="<?= $BASE_URL ?>index.php" class=me-5 >Início</a>
         <a href="<?= $BASE_URL ?>eventos.php" class=me-5>Eventos</a>
-        <a href="<?= $BASE_URL ?>restau prox.php" class=me-5>Restaurantes Próximos</a>
+        <a href="<?= $BASE_URL ?>restau_prox.php" class=me-5>Restaurantes Próximos</a>
         
       </nav>
       

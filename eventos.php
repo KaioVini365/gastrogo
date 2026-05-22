@@ -23,9 +23,9 @@
     <div class="container d-flex justify-content-between align-items-center">
       <img src="img/logo edit.png" alt="Logo GastroGo" width="150">
       <nav> 
-        <a href="<?= $BASE_URL ?>index.php" class=me-5>Início</a>
-        <a href="<?= $BASE_URL ?>eventos.php" class=me-5>Eventos</a>
-        <a href="<?= $BASE_URL ?>restau prox.php" class=me-5>Restaurantes Próximos</a>
+        <a href="<?= $BASE_URL ?>index.php" class="text-white me-4">Início</a>
+        <a href="<?= $BASE_URL ?>eventos.php" class="text-white me-4">Eventos</a>
+        <a href="<?= $BASE_URL ?>restau_prox.php" class="text-white me-4">Restaurantes Próximos</a>
        
       </nav>
     </div>

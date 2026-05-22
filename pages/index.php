@@ -7,7 +7,7 @@
       <img src="<?= $BASE_URL ?>img/logo edit.png" alt="Logo GastroGo" width="150">
       <nav>
         <a href="<?= $BASE_URL ?>eventos.php" class="text-white me-4">Eventos</a>
-        <a href="<?= $BASE_URL ?>restau prox.php" class="text-white me-4">Restaurantes Próximos</a>
+        <a href="<?= $BASE_URL ?>restau_prox.php" class="text-white me-4">Restaurantes Próximos</a>
 
         <?php if(isset($_SESSION["usuario_id"])): ?>
           <a href="<?= $BASE_URL ?>perfil.php" class="text-white me-4">

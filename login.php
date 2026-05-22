@@ -14,7 +14,7 @@
       <nav>
         <a href="<?= $BASE_URL ?>index.php" class="text-white me-4">Início</a>
         <a href="<?= $BASE_URL ?>eventos.php" class="text-white me-4">Eventos</a>
-        <a href="<?= $BASE_URL ?>restau prox.php" class="text-white me-4">Restaurantes Próximos</a>
+        <a href="<?= $BASE_URL ?>restau_prox.php" class="text-white me-4">Restaurantes Próximos</a>
       </nav>
     </div>
   </header>
