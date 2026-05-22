@@ -26,7 +26,7 @@
     <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <img src="<?= $BASE_URL ?>img/marvermelho.png" class="d-block w-100" alt="Banner 1">
+          <img src="<?= $BASE_URL ?>img/marvermelho.jpg" class="d-block w-100" alt="Banner 1">
         </div>
         <div class="carousel-item">
           <img src="<?= $BASE_URL ?>img/banner2.png" class="d-block w-100" alt="Banner 2">
