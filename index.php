@@ -23,16 +23,16 @@
   </header>
 
   <section id="banner">
-    <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+    <div id="carouselExample" class="carousel slide banner-gastrogo" >
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <img src="<?= $BASE_URL ?>img/marvermelho.jpg" class="d-block w-100" alt="Banner 1">
+          <img src="<?= $BASE_URL ?>img/marvermelho.jpg" class="d-block w-100"   alt="Banner 1">
         </div>
         <div class="carousel-item">
-          <img src="<?= $BASE_URL ?>img/banner2.png" class="d-block w-100" alt="Banner 2">
+          <img src="<?= $BASE_URL ?>img/churrascaria.jpg  " class="d-block w-100" alt="Banner 2">
         </div>
         <div class="carousel-item">
-          <img src="<?= $BASE_URL ?>img/banner3.jpg" class="d-block w-100" alt="Banner 3">
+          <img src="<?= $BASE_URL ?>img/hamburgueria.jpg" class="d-block w-100" alt="Banner 3">
         </div>
       </div>
       <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
@@ -44,37 +44,20 @@
     </div>
   </section>
 
-  <section class="py-5 bg-light text-center">
-    <div class="container">
-      <h4>Opções Rápidas</h4>
-      <div class="row g-4 mt-4">
-        <div class="col-6 col-md-3">
-          <img src="<?= $BASE_URL ?>img/churrasco.png" class="img-fluid rounded" alt="Churrasco">
-        </div>
-        <div class="col-6 col-md-3">
-          <img src="<?= $BASE_URL ?>img/japonesa.png" class="img-fluid rounded" alt="Japonesa">
-        </div>
-        <div class="col-6 col-md-3">
-          <img src="<?= $BASE_URL ?>img/hamburgue.png" class="img-fluid rounded" alt="Hambúrguer">
-        </div>
-        <div class="col-6 col-md-3">
-          <img src="<?= $BASE_URL ?>img/vegetariana.png" class="img-fluid rounded" alt="Vegetariana">
-        </div>
-      </div>
-    </div>
-  </section>
+   
 
   <section class="py-5 bg-danger text-white">
-    <div class="container">
-      <h2 class="fs-4">Restaurante Mais Avaliado do Mês!</h2>
-      <div class="row align-items-center mt-4">
-        <div class="col-md-4">
-          <img src="<?= $BASE_URL ?>img/fachada.jpg" class="img-fluid rounded" alt="Restaurante Destaque">
+    <div class="container text-center">
+      <h2 class="fs-4">Melhor Restaurante do Mês!</h2>
+      <div class="row align-items-center mt-4 justify-content-center">
+        <div class="col-md-4 text-start">
+          <p class="fs-5">Parabéns ao Restaurante Pioneiro por conquistar o topo das avaliações este mês no GastroGo!</p>
         </div>
-        <div class="col-md-8">
-          <p>Parabéns ao Restaurante Pioneiro por conquistar o topo das avaliações este mês no GastroGo!
-            Com atendimento de excelência, ambiente acolhedor e pratos irresistíveis, ele conquistou o paladar e o coração dos nossos usuários.
-          </p>
+        <div class="col-md-4 text-center">
+          <img src="<?= $BASE_URL ?>img/fachada.jpg" class="img-fluid rounded mx-auto d-block" alt="Restaurante Destaque">
+        </div>
+        <div class="col-md-4 text-end">
+          <p class="fs-5">Com atendimento de excelência, ambiente acolhedor e pratos irresistíveis, ele conquistou o paladar e o coração dos nossos usuários.</p>
         </div>
       </div>
     </div>
@@ -82,7 +65,7 @@
 
   <section class="py-5">
     <div class="container">
-      <h3 class="mb-4 text-center">Filtrar por ocasiões</h3>
+      <h3 class="mb-4 text-center">Favoritos por Ocasião</h3>
       <div class="row text-center">
         <div class="col-6 col-md-4 col-lg-2 mb-3">
           <button class="btn btn-outline-danger w-100"><a href="https://mammajamma.com.br">Aniversários</a></button>

@@ -11,10 +11,10 @@
 
   <!-- Bootstrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
 
 
-  <link rel="stylesheet" href="outro.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 

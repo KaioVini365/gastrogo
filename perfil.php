@@ -22,7 +22,7 @@
       <nav>
         <a href="<?= $BASE_URL ?>index.php" class="text-white me-4">Início</a>
         <a href="<?= $BASE_URL ?>eventos.php" class="text-white me-4">Eventos</a>
-        <a href="<?= $BASE_URL ?>restau_prox.php" class="text-white me-4">Restaurantes Próximos</a>
+        <a href="<?= $BASE_URL ?>restau prox.php" class="text-white me-4">Restaurantes Próximos</a>
         <a href="<?= $BASE_URL ?>config/process.php?type=logout" class="text-white">Sair</a>
       </nav>
     </div>
@@ -70,7 +70,7 @@
   </div>
 
   <footer class="bg-danger text-white text-center py-4 mt-5">
-    <p>&copy; 2025 GastroGo – Todos os direitos reservados.</p>
+    <p> &copy, 2025 GastroGo – Todos os direitos reservados.</p>
   </footer>
 
 </body>
