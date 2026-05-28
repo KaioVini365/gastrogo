@@ -34,7 +34,7 @@
  
   
     <section id="eventos">
-        <h2>Eventos dos Restaurantes</h2>
+        <h2>Eventos dos Restaurantes</h2> 
         <label for="eventoSelect">Filtrar por evento:</label>
         <div id="eventoSelect" class="select">
           <div class="opcao" onclick="filtrarEventos('todos')">Todos</div>
