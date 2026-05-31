@@ -1,3 +1,3 @@
 <?php
-  $BASE_URL = "http://localhost/gastrogo/";
+  $BASE_URL = "https://gastrogo.great-site.net/";
 ?>

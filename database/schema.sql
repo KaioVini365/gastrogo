@@ -1,13 +1,5 @@
 -- GASTROGO - SCHEMA DO BANCO DE DADOS
 
-DROP DATABASE IF EXISTS gastrogo_db;
-
-CREATE DATABASE gastrogo_db
-CHARACTER SET utf8mb4
-COLLATE utf8mb4_unicode_ci;
-
-USE gastrogo_db;
-
 CREATE TABLE usuarios (
     id INT PRIMARY KEY AUTO_INCREMENT,
     email VARCHAR(255) UNIQUE NOT NULL,

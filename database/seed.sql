@@ -1,10 +1,6 @@
 
 -- GASTROGO - DADOS DE EXEMPLO (SEED)
 
-
-USE gastrogo_db;
-
-
 INSERT INTO restaurantes (nome, descricao, tipo_cozinha, preco_medio, endereco, bairro, cidade, estado, telefone, latitude, longitude, imagem_url) VALUES
 ('Restaurante Bella Vista', 'Show ao vivo enquanto você janta! Ambiente elegante com música italiana ao vivo todas as sextas e sábados.', 'Italiana', 80.00, 'Rua das Laranjeiras, 123', 'Laranjeiras', 'Rio de Janeiro', 'RJ', '(21) 2222-3333', -22.9335, -43.1825, 'bella_vista.jpg'),
 
