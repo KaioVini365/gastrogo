@@ -1,136 +1,148 @@
-# 🍽️ GastroGo
+# GastroGo
 
-> Plataforma web que conecta pessoas a restaurantes próximos, sugerindo opções para diferentes ocasiões e experiências gastronômicas.
+Plataforma web para descoberta de restaurantes por ocasião e localização.
+
+[![PHP](https://img.shields.io/badge/PHP-8.0+-777BB4?logo=php&logoColor=white)](https://php.net)
+[![MySQL](https://img.shields.io/badge/MySQL-8.0+-4479A1?logo=mysql&logoColor=white)](https://mysql.com)
+[![Bootstrap](https://img.shields.io/badge/Bootstrap-5.3-7952B3?logo=bootstrap&logoColor=white)](https://getbootstrap.com)
+[![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 
 ---
 
-## Sobre o Projeto
+## Sobre
 
-O GastroGo nasceu para resolver um problema simples: **você está em uma região desconhecida e não sabe onde comer bem.** A plataforma sugere restaurantes próximos filtrados por tipo de ocasião — seja um aniversário, um jantar romântico, uma reunião de negócios ou um show ao vivo.
+GastroGo permite que usuários encontrem restaurantes por tipo de ocasião — aniversário, jantar romântico, reunião de negócios, show ao vivo. A ideia nasceu de um problema simples: é difícil achar restaurante certo para cada situação.
+
+O sistema está em desenvolvimento ativo. Cadastro e login funcionam, banco de dados está estruturado, interface básica no ar.
 
 ---
 
 ## Funcionalidades
 
-- **Carrossel de banners** com destaques e promoções de restaurantes parceiros
-- **Opções Rápidas** por categoria de culinária — japonesa, churrasco, hambúrguer e vegetariana
-- **Restaurante do Mês** — destaque para o estabelecimento mais bem avaliado pelos usuários
-- **Filtro por ocasião** — encontre restaurantes ideais para aniversários, encontros românticos, negócios, despedidas, shows ao vivo e karaokê
-- **Página de Eventos** — lista restaurantes com eventos especiais, filtráveis por categoria em tempo real via JavaScript
-- **Restaurantes Próximos** — mapa integrado via Google Maps para localizar opções na sua região
-- **Sistema completo de usuários (CRUD):**
-  - **Cadastro** — criação de conta com e-mail único e senha criptografada
-  - **Login / Logout** — autenticação segura com sessões PHP
-  - **Perfil** — edição de e-mail e senha
-  - **Exclusão de conta** — remoção permanente com confirmação
+### Funcionando agora
+- Cadastro e login de usuários
+- Edição e exclusão de conta
+- Listagem de restaurantes por categoria de evento
+- Filtro de eventos no frontend
+- Banner com carrossel de imagens
+- Design responsivo com Bootstrap 5
+
+### Em andamento
+- Busca de restaurantes do banco de dados (hoje os dados estão hardcoded)
+- Sistema de avaliações
+- Sistema de favoritos
+
+### Planejado
+- Busca por geolocalização real
+- Sistema de reservas
+- API RESTful
+
+---
+
+## Tecnologias
+
+**Backend:** PHP 8.0+, MySQL 8.0+, PDO
+
+**Frontend:** HTML5, CSS3, Bootstrap 5.3, JavaScript
+
+**Ambiente:** WampServer, phpMyAdmin, VSCode
+
+---
+
+## Como rodar localmente
+
+**Requisitos:** PHP 8.0+, MySQL 8.0+, WampServer ou XAMPP
+
+```bash
+git clone https://github.com/KaioVini365/gastrogo.git
+```
+
+Importe o banco de dados pelo phpMyAdmin:
+1. Importe `database/schema.sql`
+2. Importe `database/seed.sql`
+
+Configure `config/connection.php` com suas credenciais MySQL:
+
+```php
+$host   = "localhost";
+$dbname = "gastrogo_db";
+$user   = "root";
+$pass   = "";
+```
+
+Acesse `http://localhost/gastrogo/`
+
+**Usuário de teste:**
+- Email: `teste@gastrogo.com`
+- Senha: `teste123`
+
+---
+
+## Estrutura do projeto
+
+```
+gastrogo/
+├── config/
+│   ├── connection.php    # Conexão PDO com MySQL
+│   ├── process.php       # CRUD (cadastro, login, edição, exclusão)
+│   └── url.php           # URL base
+├── templates/
+│   ├── header.php
+├── database/
+│   ├── schema.sql        # 6 tabelas + 1 view
+│   └── seed.sql          # Dados de exemplo
+├── img/
+├── index.php
+├── login.php
+├── create.php
+├── perfil.php
+├── eventos.php
+├── restau_prox.php
+├── estyle.css
+└── script.js
+```
+
+---
+
+## Banco de dados
+
+6 tabelas: `usuarios`, `restaurantes`, `eventos`, `avaliacoes`, `favoritos`, `reservas`
+
+View `media_avaliacoes` calcula nota média por restaurante automaticamente.
+
+```
+usuarios (1) ──< (N) avaliacoes (N) >── (1) restaurantes
+usuarios (1) ──< (N) favoritos (N)  >── (1) restaurantes
+restaurantes (1) ──< (N) eventos
+restaurantes (1) ──< (N) reservas >── (1) usuarios
+```
 
 ---
 
 ## Segurança
 
-- Senhas armazenadas com `password_hash()` — nunca em texto puro
-- Autenticação via `password_verify()`
-- Proteção de páginas restritas por verificação de sessão
-- Prevenção de SQL Injection via PDO com `bindParam()`
-- Arquivo `connection.php` ignorado pelo Git via `.gitignore`
+- Senhas com `password_hash()`
+- Prepared Statements via PDO (sem SQL injection)
+- Controle de sessão PHP nas rotas protegidas
+- CSRF tokens: a implementar
 
 ---
 
-## Tecnologias Utilizadas
+## Progresso
 
-| Tecnologia | Uso |
-|---|---|
-| PHP 8.3 | Backend, sessões e lógica de negócio |
-| MySQL 8.4 | Banco de dados de usuários |
-| PDO | Conexão segura com o banco de dados |
-| Bootstrap 5.3 | Layout responsivo e componentes visuais |
-| JavaScript | Filtro dinâmico de eventos sem recarregar a página |
-| HTML5 / CSS3 | Estrutura e estilização |
-| Google Maps Embed | Mapa de restaurantes próximos |
+- [x] Banco de dados modelado e populado
+- [x] Autenticação completa (cadastro, login, logout, edição, exclusão)
+- [ ] Restaurantes vindos do banco
+- [ ] Sistema de avaliações
+- [ ] Deploy
 
 ---
 
-## Estrutura de Pastas
+## Autor
 
-```
-GastroGo/
-├── config/
-│   ├── connection.php     # Conexão com o banco de dados (ignorado pelo Git)
-│   ├── connection.example.php  # Modelo de conexão para configuração local
-│   ├── process.php        # Lógica CRUD de usuários (create, login, editar, deletar, logout)
-│   └── url.php            # URL base do projeto
-├── templates/
-│   ├── header.php         # Cabeçalho global com nav dinâmica (logado/deslogado)
-│   └── footer.php         # Rodapé global
-├── img/                   # Imagens do site
-├── index.php              # Página inicial
-├── login.php              # Login de usuários
-├── create.php             # Cadastro de usuários
-├── perfil.php             # Perfil — editar e excluir conta
-├── eventos.php            # Página de eventos com filtro dinâmico
-├── restau prox.php        # Página de restaurantes próximos com mapa
-└── estilo.css             # Estilos principais
-```
+**Kaio Vinicius Soares Luiz**
+Estudante de Sistemas de Informação — UVA
 
----
+- GitHub: [@KaioVini365](https://github.com/KaioVini365)
+- Portfolio: [kaiovini365.github.io/Portifolio](https://kaiovini365.github.io/Portifolio)
 
-## Banco de Dados
-
-```sql
-CREATE DATABASE gastrogo;
-
-USE gastrogo;
-
-CREATE TABLE usuarios (
-  id INT AUTO_INCREMENT PRIMARY KEY,
-  email VARCHAR(191) NOT NULL UNIQUE,
-  senha VARCHAR(255) NOT NULL,
-  criado_em TIMESTAMP DEFAULT CURRENT_TIMESTAMP
-);
-```
-
----
-
-## Como Rodar Localmente
-
-**Pré-requisitos:** WampServer 3.4+ instalado e rodando.
-
-1. Clone o repositório:
-```bash
-git clone https://github.com/KaioVini365/gastrogo.git
-```
-
-2. Copie a pasta para:
-```
-C:\wamp64\www\Gastrogo\
-```
-
-3. Crie o arquivo `config/connection.php` com base no `connection.example.php`:
-```php
-<?php
-  $host   = "localhost";
-  $dbname = "gastrogo";
-  $user   = "root";
-  $pass   = ""; 
-
-  try {
-    $conn = new PDO("mysql:host=$host;dbname=$dbname", $user, $pass);
-    $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-  } catch(PDOException $e) {
-    echo "Erro de conexão: " . $e->getMessage();
-  }
-```
-
-4. Crie o banco de dados pelo PHPMyAdmin em `http://localhost/phpmyadmin` e execute o SQL acima.
-
-5. Acesse no navegador:
-```
-http://localhost/Gastrogo/
-```
-
----
-
-## Desenvolvido por
-
-**Kaio Vinicius Soares Luiz** — Estudante de Sistemas de Informação | UVA  
-Projeto acadêmico desenvolvido para a disciplina de Desenvolvimento Web.
