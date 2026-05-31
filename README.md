@@ -146,4 +146,4 @@ Estudante de Sistemas de Informação — UVA
 - GitHub: [@KaioVini365](https://github.com/KaioVini365)
 - Portfolio: [kaiovini365.github.io/Portifolio](https://kaiovini365.github.io/Portifolio)
 
-## Acesse o projeto ao vivo https://gastrogo.great-site.net
+## Acesse o projeto https://gastrogo.great-site.net
